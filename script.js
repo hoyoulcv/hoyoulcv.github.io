@@ -27,6 +27,18 @@ const foldableContent7 = document.getElementById('foldableContent7');
 // (8) Dae eun
    const toggleButton8 = document.getElementById('toggleButton8');
 const foldableContent8 = document.getElementById('foldableContent8');
+// (8) Dae eun
+   const toggleButton9 = document.getElementById('toggleButton9');
+const foldableContent9 = document.getElementById('foldableContent9');
+// (8) Dae eun
+const toggleButton10 = document.getElementById('toggleButton10');
+const foldableContent10 = document.getElementById('foldableContent10');
+
+const toggleButton11 = document.getElementById('toggleButton11');
+const foldableContent11 = document.getElementById('foldableContent11');
+
+const toggleButton12 = document.getElementById('toggleButton12');
+const foldableContent12 = document.getElementById('foldableContent12');
 
 
    // 버튼 클릭 시 이벤트 리스너 추가
@@ -63,6 +75,19 @@ const foldableContent8 = document.getElementById('foldableContent8');
    });
    toggleButton8.addEventListener('click', function () {
      toggleFoldableContent(foldableContent8);
+   });
+   toggleButton9.addEventListener('click', function () {
+     toggleFoldableContent(foldableContent9);
+   });
+   toggleButton10.addEventListener('click', function () {
+     toggleFoldableContent(foldableContent10);
+   });
+   toggleButton11.addEventListener('click', function () {
+     toggleFoldableContent(foldableContent11);
+   });
+
+   toggleButton12.addEventListener('click', function () {
+     toggleFoldableContent(foldableContent12);
    });
    
    

@@ -12,7 +12,8 @@
   <header>
     <!-- Header content -->
     <div class='title'>
-      <span class="name1">Curriculum Vitae</span>
+	<h3 class='rotate-class' id='focus-color-red'>Detailed </h3>
+      <span class="name1"> Curriculum Vitae</span>
       <span class='name2'>Hoyoul Park </span>
       <button class='buttonStyle' id='toggleButton0'> toggle Detailed Information</button>        
     </div>
@@ -77,25 +78,10 @@
   <main>
     <!-- section: education -->
     <div class='heading'>
-      <h1 class="section">Education</h1>        
+      <h1 class="section" style='display:inline'>Education</h1>
+      <button class='buttonStyle' id="toggleButton1">toggle Detailed Information</button>            
     </div>
-    
-    <div class='contents'>
-    <!-- unm -->
-      <span class="c1">
-	University of New Mexico, USA (2008 ~ 2011)
-      </span>
-      <button class='buttonStyle' id="toggleButton1">toggle Detailed Information</button>      
-      <span class="c2" id="focus-color-red">
-	Computer Science
-      </span>
-      <span class="c3">
-	Master Degree
-      </span>
-      <span class="c4">
-	GPA: 3.54/4.0
-      </span>    
-    </div>
+	<!-- <hr class='line'/> -->
     <!-- UNM transcript button -->
 	<!-- <button id="toggleButton1">toggle Detailed Information</button> -->
     <div class="foldable-content" id="foldableContent1">
@@ -139,6 +125,23 @@
 	<a href="./materials/unm_degree.pdf" download="hoyoul_unm_master_degree.pdf">
 	  <button>Download Master degree</button>
 	</a>      
+    </div>
+    
+    <div class='contents'>
+    <!-- unm -->
+      <span class="c1">
+	University of New Mexico, USA (2008 ~ 2011)
+      </span>
+
+      <span class="c2" id="focus-color-red">
+	Computer Science
+      </span>
+      <span class="c3">
+	Master Degree
+      </span>
+      <span class="c4">
+	GPA: 3.54/4.0
+      </span>    
     </div>
     <div class='contents'>
     <!-- unm -->
@@ -209,14 +212,15 @@
     </div>
     <!-- section: work experience -->
     <div class='heading'>
-      <h1 class="section">Work Experience</h1>        
+      <h1 class="section" style='display:inline'>Work Experience</h1>
+      <button class='buttonStyle' id="toggleButton3">toggle Detailed Information</button>                  
     </div>
 	<!-- (1) whitebrew -->
     <div class='contents'>
       <span class="c1">
-	WhiteBrew (10.2023~ ongoing)
+	App Developer - <span id='focus-small-letter'>WhiteBrew (10.2023~ ongoing)</span>
       </span>
-      <button class='buttonStyle' id="toggleButton3">toggle Detailed Information</button>            
+
       <span class="c2">
 	Project: Korean Holdem Card Game
       </span>
@@ -245,8 +249,9 @@
     <!-- P&C detail infos -->
     <div class='contents'>
       <span class="c1">
-	P&C (10.2023~ ongoing)
-      </span>
+	Data Scientist - <span id='focus-small-letter'>P&C (July.2021~ ongoing)</span>
+      </span>      
+
       <button class='buttonStyle' id="toggleButton4">toggle Detailed Information</button>            
       <span class="c2">
 	Project: 수도
@@ -269,7 +274,7 @@
 	<br />
       <h1 class='sub-title'>Additional Materials</h1>      	      
       <a href="./materials/whitebrew_contract.pdf" download="hoyoul_whitebrew_contract.pdf">
-	<button>Download contract of whitebrew</button>
+<button>Download contract of whitebrew</button>
       </a><br>	      
     </div>
 
@@ -277,8 +282,8 @@
     <!-- dae eun detail infos -->
     <div class='contents'>
       <span class="c1">
-	Daeeun Company (10.2023~ ongoing)
-      </span>
+	Data Scientist - <span id='focus-small-letter'>Daeeun Electronics (Oct.2019~ Dec,2020)</span>
+      </span>      
       <button class='buttonStyle' id="toggleButton5">toggle Detailed Information</button>            
       <span class="c2">
 	Project: 태양광
@@ -290,6 +295,7 @@
 	position: developer, web, app, everything by myself
       </span>            
     </div>
+    
     <!-- P&C detail infos -->
     <div class="foldable-content" id="foldableContent5">
 	<br />
@@ -308,8 +314,9 @@
     <!-- LG detail infos -->
     <div class='contents'>
       <span class="c1">
-	LG Company (IOT lab) (10.2023~ ongoing)
-      </span>
+	IOT Researcher - <span id='focus-small-letter'>LG Electronics (Oct.2019~ mar,2021)</span>
+      </span>            
+
       <button class='buttonStyle' id="toggleButton6">toggle Detailed Information</button>            
       <span class="c2">
 	Project: IOT research, webOS
@@ -322,14 +329,14 @@
       </span>                  
       
     </div>
-    <!-- P&C detail infos -->
+    <!-- LG detail infos -->
     <div class="foldable-content" id="foldableContent6">
 	<br />
       <h1 class='main-title'>comments</h1>
       <p class='main-content'>
 	this is foldable content.
       </p>
-      <!-- <div class="additional"> -->
+      <!-- additional info lg -->
 	<br />
       <h1 class='sub-title'>Additional Materials</h1>      	      
       <a href="./materials/whitebrew_contract.pdf" download="hoyoul_whitebrew_contract.pdf">
@@ -337,11 +344,12 @@
       </a><br>	      
     </div>
 
-    <!-- LG detail infos -->
+    <!-- samsung detail infos -->
     <div class='contents'>
-      <span class="c1" id="focus-color-red">
-	Embedded Engineer
-      </span>
+      <span class="c1">
+	Embedded Engineer - <span id='focus-small-letter'>Samsung Electronics (Oct.2019~ mar,2021)</span>
+      </span>            
+
       <button class='buttonStyle' id="toggleButton7">toggle Detailed Information</button>            
       <span class="c2" id='focus-color-blue'>
 	Samsung Electronics (IOT lab) (10.2023~ ongoing)
@@ -367,12 +375,27 @@
 	<button>Download contract of whitebrew</button>
       </a><br>	      
     </div>
-    
+    <br>
+    <br>
     <!-- section: teaching experience -->
     <div class='heading'>
-      <h1 class="section">Teaching Experience</h1>        
+      <h1 class='section' style='display:inline'>Teaching Experience</h1>
+      <button class='buttonStyle' id="toggleButton8">toggle Detailed Information</button>            	      
     </div>
-    
+    <div class="foldable-content" id="foldableContent8">
+      <br />
+      <h1 class='main-title'>comments</h1>
+      <p class='main-content'>
+	this is foldable content.
+      </p>
+      <!-- patent additional info -->
+      <br />
+      <h1 class='sub-title' >Additional Materials  </h1>      	      
+      <a href="./materials/whitebrew_contract.pdf" download="hoyoul_whitebrew_contract.pdf">
+	<button>Download contract of whitebrew</button>
+      </a>
+      <br>	      
+    </div>
     <div class='contents'>
       <span class="c1">
 	DaeJung High School, jeju, korea
@@ -406,105 +429,172 @@
       subject: computer class
     </span>
   </div>
+    
   
-    <!-- section: Patent -->
+  <!-- section: Patent -->
+  <br />
+<br />
   <div class='heading'>
-    <h1 class="section">Patents</h1>
+    <h1 class="inlineSection">Patents</h1>
+	<!-- <span class="c1">
+	      patent title
+	    </span> -->
+    <button class='buttonStyle' id="toggleButton9">toggle Detailed Information</button>            	    
     <!-- patent detail infos -->
-    <div class='contents'>
-      <span class="c1">
-	patent title
-      </span>
-      <button class='buttonStyle' id="toggleButton8">toggle Detailed Information</button>            	
+  </div>
+  
+  <div class='contents'>
+  </div>
+  
+  <div class="foldable-content" id="foldableContent9">
+    <br />
+    <h1 class='main-title'>comments</h1>
+    <p class='main-content'>
+      this is foldable content.
+    </p>
+    <!-- patent additional info -->
+    <br />
+    <h1 class='sub-title'>Additional Materials</h1>      	      
+    <a href="./materials/whitebrew_contract.pdf" download="hoyoul_whitebrew_contract.pdf">
+      <button>Download contract of whitebrew</button>
+    </a>
+    <br>	      
+  </div>
+  <br />
+  <br />
+
+  <!-- section: training & certificate -->
+  <div class='heading'>
+    <h1 class="inlineSection">Credentials </h1>
+	<!-- <span class="c1-small">
+	      Training & Certificates
+	    </span> -->
+    <button class='buttonStyle' id="toggleButton10">toggle Detailed Information</button>
+  </div>
+  <div class="foldable-content" id="foldableContent10">
+    <h1 class='main-title'>comments</h1>
+    <p class='main-content'>
+      test
+    </p>
+  </div>      
+
+  <br />
+  <br />
+    <!-- section: skills -->
+  <div class='heading'>
+    <h1 class="inlineSection">Skills</h1>
+	<!-- <span class='c1-small'> Technical Skills </span> -->
+    <button class='buttonStyle' id="toggleButton11">toggle Detailed Information</button>          
+  </div>
+  <div class="foldable-content" id="foldableContent11">
+    <h1 class='main-title'>comments</h1>
+    <p class='main-content'>
+    <span class="c1">
+      Programming Languages:
+    </span>      
+    <span class="c2">
+      Proficient: Python, Ruby, JavaScript, C++ , Java, Dart
+    </span>      
+    <span class="c3">
+      Familiar:  lisp, haskell, prolog
+    </span>
+    <br />
+    <span class="c1">
+      Data Analysis & Visualization:
+    </span>
+    <span class="c2">
+      Data Manipulation: Pandas, NumPy
+    </span>
+    <span class="c3">
+      Visualization: Matplotlib, Seaborn, D3.js
+    </span>
+    <br />
+    <span class="c1">
+      Database Management:
+    </span>
+    <span class="c2">
+      SQL (MySQL, PostgreSQL)
+    </span>
+    <span class="c3">
+      NoSQL: MongoDB
+    </span>
+    <br />
+    <span class="c1">
+      Machine Learning & AI:
+    </span>
+    <span class="c2">
+      pytorch,TensorFlow, Scikit-learn for ML
+    </span>
+    <br />
+    <span class="c1">
+      Embedded:
+    </span>
+    <span class="c2">
+      Arduino, Raspberry pi, MQTT, RS485, gpio control for sensors, servo motor control
+    </span>
+    <br />
+    <span class="c1">
+      others:
+    </span>
+    <span class="c2">
+      AWS EC2, Lambda, S3, IAM and git
+    </span>
+    </p>
+  </div>
+  <br />
+  <br />
+    <!-- section: other interests -->
+    <div class='heading'>
+      <h1 class="inlineSection">Other Interests</h1>
+      <button class='buttonStyle' id="toggleButton12">toggle Detailed Information</button>
     </div>
-    <div class="foldable-content" id="foldableContent8">
+    <div class='contents'>
+    </div>
+      
+    <div class="foldable-content" id="foldableContent12">
       <br />
       <h1 class='main-title'>comments</h1>
       <p class='main-content'>
-	this is foldable content.
+	I enjoy creating new things. And also I like disassemble
+	electron gadget.  I've dismantled a car and motorcycle
+	before. Not necessarily to understand their workings but
+	because I enjoy the feeling of being liberated from the
+	confining black box. The easiest way for me to create
+	something new is by playing musical instruments or
+	drawing. It's about feeling good, regardless of skill level.
+
+	Recently, I've picked up a new hobby: making
+	movies. Filmmaking stimulates my imagination. Also, it allows
+	me to metaphorically express the philosophical issues I've
+	had. For instance, in the past, I made a fake documentary
+	addressing the dilemma of personal choices. The protagonist in
+	the documentary makes selfish choices to gain the most benefit
+	within the given environment or society. It's the kind of
+	choice most people in Korea make. This is akin to making
+	decisions based on maximum reward in reinforcement
+	learning. But he's conflicted. He dreams of a life where he
+	peacefully reads books in nature without pursuing competition
+	or gain. Another influencing factor in his choices is his
+	parents' wishes, creating a dilemma. It presents a sort of
+	trade-off. There's a philosophical question about whether to
+	follow Leibniz's free will or Kant's categorical imperative
+	(parents' demands). What choice should be made? This process
+	of contemplation and creation is what interests me.
+	  
       </p>
       <!-- patent additional info -->
       <br />
-      <h1 class='sub-title'>Additional Materials</h1>      	      
-      <a href="./materials/whitebrew_contract.pdf" download="hoyoul_whitebrew_contract.pdf">
-	<button>Download contract of whitebrew</button>
-      </a>
+      <h1 class='sub-title'>Additional Materials</h1>
+      <p class='sub-content'>
+	<a href="https://youtu.be/S5TWmMKNNjk"  target="_blank" style="text-decoration:none;">- documentary preview</a> <br />
+	<a href="https://www.youtube.com/shorts/84ubORfMOaE?feature=share" target="_blank" style="text-decoration:none;">- playing bass</a><br />
+	<a href="https://youtu.be/epM80J-3K0Y" target="_blank" style="text-decoration:none;">- playing drum</a><br />
+	<a href="https://youtu.be/HcS7htU9vzU" target="_blank" style="text-decoration:none;">- disassembly my bike</a><br />
+	- making camping car<br>
+      </p>
       <br>	      
     </div>
-  </div>
-    <!-- section: skills -->
-    <div class='heading'>
-      <h1 class="section">Skills</h1>        
-    </div>
     
-    <div class='contents'>
-      <span class="c1">
-	Programming Languages:
-      </span>      
-      <span class="c2">
-	Proficient: Python, Ruby, JavaScript, C++ , Java, Dart
-      </span>      
-      <span class="c3">
-	Familiar:  lisp, haskell, prolog
-      </span>
-      <span class="c1">
-	Data Analysis & Visualization:
-      </span>
-      <span class="c2">
-	Data Manipulation: Pandas, NumPy
-      </span>
-      <span class="c3">
-	Visualization: Matplotlib, Seaborn, D3.js
-      </span>
-      <span class="c1">
-	Database Management:
-      </span>
-      <span class="c2">
-	SQL (MySQL, PostgreSQL)
-      </span>
-      <span class="c3">
-	NoSQL: MongoDB
-      </span>
-      <span class="c1">
-	Machine Learning & AI:
-      </span>
-      <span class="c2">
-	pytorch,TensorFlow, Scikit-learn for ML
-      </span>
-      <span class="c1">
-	Embedded:
-      </span>
-      <span class="c2">
-	Arduino, Raspberry pi, MQTT, RS485, gpio control for sensors, servo motor control
-      </span>
-      <span class="c1">
-	others:
-      </span>
-      <span class="c2">
-	AWS EC2, Lambda, S3, IAM and git
-      </span>            
-    </div>
-    <!-- section: other interests -->
-    <div class='heading'>
-      <h1 class="section">Other Interests</h1>        
-    </div>
-    
-    <div class='contents'>
-      <span class="c1">
-	making films, 	playing drum & bass , DIY something
-      </span>
-      <span class="c2">
-	- Jeju documentary Film Festival Award
-	- Jeju Haenyeo Festival Performance
-	- DIY Projects
-
-      </span>
-      <span class="c3">
-      	- customize motor cycle
-	- making camping car
-      </span>	
-      
-    </div>      
   </main>
 
   <footer>
